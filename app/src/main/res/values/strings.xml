@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BookManager</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="account_fragment">Account fragment</string>
+    <string name="home_fragment">Home fragment</string>
+    <string name="card_image">""</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

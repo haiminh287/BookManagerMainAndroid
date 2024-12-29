@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HistoryOrderActivity">
+    <ImageView
+        android:id="@+id/back_button_history_order"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:focusable="true"/>
+    <TextView
+        android:id="@+id/history_order_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LỊCH SỬ ĐƠN HÀNG"
+        android:textStyle="bold"
+        android:textColor="@color/red_primary"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_order_title"
+        android:padding="16dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mã"
+                android:layout_weight="0.5"
+            android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Ngày"
+                android:layout_weight="0.8"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Họ Tên"
+                android:layout_weight="1"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Địa Chỉ"
+                android:layout_weight="1"
+                android:padding="8dp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="State"
+                android:layout_weight="1"
+                android:padding="8dp" />
+        </TableRow>
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_order_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/history_order_title"
+        android:layout_marginTop="8dp"
+        android:padding="16dp" />
+</RelativeLayout>

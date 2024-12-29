@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:id="@+id/card_view_review"
+    app:cardElevation="4dp"
+    android:backgroundTint="@color/white"
+    >
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <TextView
+            android:id="@+id/card_nameUser_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="User"/>
+        <LinearLayout
+            android:id="@+id/linearTextBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/card_nameUser_review"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/card_content_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tiêu đề Card"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/card_created_at_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

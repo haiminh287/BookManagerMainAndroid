@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@drawable/amnhac10"/>
+
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/detail_author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/detail_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/red_primary"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/review_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="16dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/reviewText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhập đánh giá của bạn..."
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:minLines="3"
+            android:visibility="gone"
+            android:padding="8dp"
+            android:background="@drawable/edittext_border" />
+        <Button
+            android:id="@+id/btnReview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đánh Giá"
+            android:visibility="gone"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddToCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Thêm Giỏ Hàng"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnViewCart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Xem Giỏ Hàng"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>
