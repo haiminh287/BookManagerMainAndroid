@@ -109,7 +109,6 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.OrderViewHol
                         if(response.isSuccessful()){
                             try {
                                 String momoDeepLink = response.body().getMomo_deep_link();
-                                Toast.makeText(context,momoDeepLink,Toast.LENGTH_SHORT).show();
                                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(momoDeepLink));
                                 if (intent.resolveActivity(context.getPackageManager()) != null) {
                                     context.startActivity(intent);
